@@ -9,37 +9,58 @@
     <title>Courses</title>
         <style>
             body {
-                font-family: Arial, sans-serif;
-                margin: 0;
-                padding: 20px;
-            }
+          font-family: 'Arial', sans-serif;
+          margin: 0;
+          padding: 0;
+          background-color: #f5f5f5;
+        }
     
-            h2 {
-                color: #333;
-            }
+        header {
+          background-color: #333;
+          color: #fff;
+          text-align: center;
+          padding: 15px;
+        }
     
-            .course {
-                border: 1px solid #ddd;
-                padding: 20px;
-                margin-bottom: 20px;
-                border-radius: 8px;
-            }
+        section {
+          padding: 20px;
+        }
     
-            .course img {
-                max-width: 100%;
-                height: auto;
-                border-radius: 4px;
-                margin-bottom: 10px;
-            }
+        .course-container {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-around;
+        }
     
-            p {
-                color: #555;
-            }
-            .cricket { background-color: #a8d0ff; }
-            .football { background-color: #ffd870; }
-            .badminton { background-color: #aaffaa; }
-            .kabaddi { background-color: #ff99a8; }
-            .basketball { background-color: #ffc0cb; }
+        .course-card {
+          width: 300px;
+          margin: 20px;
+          padding: 15px;
+          background-color: #fff;
+          border-radius: 8px;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+          transition: transform 0.3s ease-in-out;
+        }
+    
+        .course-card:hover {
+          transform: scale(1.05);
+        }
+    
+        .course-image {
+          width: 100%;
+          border-radius: 4px;
+        }
+    
+        .course-title {
+          font-size: 1.5em;
+          font-weight: bold;
+          margin: 10px 0;
+        }
+    
+        .course-description {
+          font-size: 1em;
+          color: #666;
+        }
         </style>
     </head>
     <body>
@@ -49,46 +70,48 @@
             </h1>
           </center>
         <h2>Courses Offered</h2>
-    
-        <!-- Cricket Course -->
-        <div class="course">
-            <img src="cricket.jpg" alt="Cricket" width="300px" height="350px">
-            <h3>Cricket Training</h3>
-            <p>Master the art of batting, bowling, and fielding with our expert coaches. <br>
-                Join our cricket training program to enhance your skills on the cricket field.</p>
-        </div>
-    
-        <!-- Football Course -->
-        <div class="course">
-            <img src="football.jpeg" alt="Football">
-            <h3>Football Training</h3>
-            <p>Improve your dribbling, passing, and goal-scoring abilities in our football training sessions.<br>
-                 Train with experienced coaches and enhance your overall football skills.</p>
-        </div>
-    
-        <!-- Badminton Course -->
-        <div class="course">
-            <img src="badminton.jpeg" alt="Badminton">
-            <h3>Badminton Coaching</h3>
-            <p>Learn the techniques of smashing, serving, and court strategies in our badminton coaching program. <br>
-                Elevate your game with personalized training sessions.</p>
-        </div>
-    
-        <!-- Kabaddi Course -->
-        <div class="course">
-            <img src="kabaddi.jpeg" alt="Kabaddi">
-            <h3>Kabaddi Training</h3>
-            <p>Develop your raiding and defending skills in our kabaddi training sessions. <br>
-                Join us to learn the nuances of this exhilarating contact sport from our experienced coaches.</p>
-        </div>
-    
-        <!-- Basketball Course -->
-        <div class="course">
-            <img src="basketball.jpeg" alt="Basketball">
-            <h3>Basketball Coaching</h3>
-            <p>Enhance your shooting, dribbling, and defensive skills in our basketball coaching program. <br>
-                Train under professional coaches to become a proficient basketball player.</p>
-        </div>
+
+        <section>
+            <div class="course-container">
+        
+              <div class="course-card">
+                <img src="cricket.jpg" alt="cricket" class="course-image">
+                <h2 class="course-title">Cricket</h2>
+                <p class="course-description">Master the art of batting, bowling, and fielding with our expert coaches. <br>
+                    Join our cricket training program to enhance your skills on the cricket field.</p>
+              </div>
+              <div class="course-card">
+                <img src="football.jpeg" alt="football" class="course-image">
+                <h2 class="course-title">Football</h2>
+                <p class="course-description">Improve your dribbling, passing, and goal-scoring abilities in our football training sessions.<br>
+                    Train with experienced coaches and enhance your overall football skills.</p>
+              </div>
+              <div class="course-card">
+                <img src="badminton.jpeg" alt="badminton" class="course-image">
+                <h2 class="course-title">Badminton</h2>
+                <p class="course-description">Learn the techniques of smashing, serving, and court strategies in our badminton coaching program. <br>
+                    Elevate your game with personalized training sessions.</p>
+              </div>
+        
+             
+              <div class="course-card">
+                <img src="kabaddi.jpeg" alt="Kabaddi" class="course-image">
+                <h2 class="course-title">Kabaddi</h2>
+                <p class="course-description">Develop your raiding and defending skills in our kabaddi training sessions. <br>
+                    Join us to learn the nuances of this exhilarating contact sport from our experienced coaches.</p>
+              </div>
+
+              <div class="course-card">
+                <img src="basketball.jpeg" alt="Basketball" class="course-image">
+                <h2 class="course-title">Basketball</h2>
+                <p class="course-description">Enhance your shooting, dribbling, and defensive skills in our basketball coaching program. <br>
+                    Train under professional coaches to become a proficient basketball player.</p>
+              </div>
+        
+            </div>
+          </section> <br>
+
+
         <a href="about.html" target="_self">Previous page</a>
         <a href="individualsport.html" target="_self">Next page</a> 
     </body>
