@@ -8,42 +8,41 @@
     <script src="https://kit.fontawesome.com/e6d375a159.js" crossorigin="anonymous"></script> 
     <title>About</title>
     <style>
-        body {
+      body {
   font-family: 'Arial', sans-serif;
   margin: 0;
+  padding: 0;
+}
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
+nav ul li {
+  display: inline;
+  margin-right: 15px;
+}
 
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
 
 .about-section {
   background-image: url('background-image.jpg'); 
   background-size: cover;
-  background-position: center;
   color: #333;
   padding: 50px 0;
-}
-
-.container {
-  max-width: 800px;
-  margin: 0 auto;
   text-align: center;
 }
 
-h2 {
-  color: #fff;
-}
-
-p {
-  font-size: 18px;
-  line-height: 1.5;
-  margin-bottom: 20px;
-  color: chocolate;
-}
-
-@media (max-width: 768px) {
-  .container {
-    padding: 0 20px;
-  }
+.container {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
     </style>
@@ -55,20 +54,25 @@ p {
         </h1>
       </center>
 
-  <section class="about-section">
-    <div class="container">
-      <h2>About Us</h2>
-      <p>
-        Welcome to Sports Academy, where we believe in the power of sports to transform lives. 
-        Our academy is dedicated to providing top-notch training and fostering a love for sports 
-        in athletes of all ages and skill levels.
-      </p>
-      <p>
-        With state-of-the-art facilities, experienced coaching staff, and a commitment to excellence, 
-        we aim to help individuals reach their full potential in their chosen sports.
-      </p>
-    </div>
-  </section>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="programs.html">Programs</a></li>
+          <li><a href="registration.html">Registration</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+  
+    <section class="about-section">
+      <div class="container">
+        <h2>About Us</h2>
+        <p>Welcome to Sports Academy, where excellence meets passion! We are dedicated to providing top-notch sports training and fostering a love for physical activity.</p>
+        <p>Our academy with the mission of developing athletes both in skill and character. We believe in the power of sports to inspire, challenge, and bring communities together.</p>
+        <p>At Sports Academy, we offer a variety of programs catering to different ages and skill levels. Our experienced coaching staff is committed to helping each individual reach their full potential and achieve success in their chosen sport.</p>
+        <p>Join us on this exciting journey of growth, teamwork, and athletic achievement!</p>
+      </div>
+    </section>
 
 
     
