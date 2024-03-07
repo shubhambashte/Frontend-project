@@ -10,7 +10,7 @@
   <script src="https://kit.fontawesome.com/e6d375a159.js" crossorigin="anonymous"></script>
 <style>
   footer{
-    background-color: coral;
+    background-color: goldenrod;
     color: black;
     justify-content: space-between;
     
@@ -24,16 +24,48 @@ img {
     image-rendering: pixelated; 
 }
 
+body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    footer {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .contact-info {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      flex-wrap: wrap;
+      margin-top: 20px;
+    }
+
+    .contact-info div {
+      margin-bottom: 10px;
+    }
+
+    .social-icons a {
+      display: inline-block;
+      margin: 0 10px;
+      color: #fff;
+      text-decoration: none;
+      font-size: 20px;
+    }
 </style>
 </head>
 
 <body>
   <center>
     <h1>
-      <p class="text-primary"><i class="fa-solid fa-fire-flame-curved"></i>Sports Academy</p>
+      <p class="bg-primary"><i class="fa-solid fa-fire-flame-curved"></i>Sports Academy</p>
     </h1>
   </center>
-  <nav class="navbar navbar-expand-lg navbar-white bg-light">
+  <nav class="navbar navbar-expand-lg navbar-white bg-danger">
     <div class="container-fluid">
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
         aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -125,18 +157,26 @@ img {
       <span class="visually-hidden">Next</span>
     </button>
   </div>
-  <footer id="Contact">
+  <footer id="Contact" style="background-color: gold; color: black; padding: 20px;">
+    <div style="text-align: center;">
+      <h3>Contact Information</h3>
+      <p>Email: info@sportsacademy.com</p>
+      <p>Phone: +1 (555) 123-4567</p>
+  </div>
+
+      <p>&copy; 2024 Sports Academy. All rights reserved.</p>
+
    
-    <a href="https://www.linkedin.com/in/shubham-bashte/" target="_blank"><i
-            class="fa-brands fa-linkedin"></i></a></i>
-    <a href="https://github.com/shubhambashte/" target="_blank"><i class="fa-brands fa-github"></i></a></i>
-    <a href="https://www.instagram.com/shubhambashte/" target="_blank"><i
-            class="fa-brands fa-instagram"></i></a></i>
-    <a href="https://www.facebook.com/shubham.bashte/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
-    <br>
-    <i class="fa-solid fa-envelope" style="font-size: 20px;"><a href="mailto:shubhamrbashte@gmail.com" target="_blank" style="text-decoration: none; font-size: 20px;"> shubhamrbashte@gmail.com</a></i>
-    <i class="fa-solid fa-phone" style="font-size: 20px;"><a href="Callto:+919137867094" target="_blank" style="text-decoration: none; font-size: 20px;"> +91 9137867094</a></i>
-    <p>&copy; 2024 Sports Academy. All rights reserved.</p>
+    <a href="https://www.linkedin.com/in/shubham-bashte/" style="margin: 0 10px; color: #fff; text-decoration: none;" target="_blank"><i
+            class="fa-brands fa-linkedin" style="width: 30px; height: 30px; margin-bottom: -7px;"></i></a></i>
+    <a href="https://github.com/shubhambashte/" target="_blank"><i class="fa-brands fa-github" style="width: 30px; height: 30px; margin-bottom: -7px;"></i></a></i>
+    <a href="https://www.instagram.com/shubhambashte/" style="margin: 0 10px; color: #fff; text-decoration: none;" target="_blank"><i
+            class="fa-brands fa-instagram" style="width: 30px; height: 30px; margin-bottom: -7px;"></i></a></i>
+    <a href="https://www.facebook.com/shubham.bashte/" style="margin: 0 10px; color: #fff; text-decoration: none;" target="_blank"><i class="fa-brands fa-facebook" style="width: 30px; height: 30px; margin-bottom: -7px;"></i></a>
+    
+    
 </footer>
+
+
 </body>
 </html>
